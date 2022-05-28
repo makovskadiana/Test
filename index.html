@@ -1,99 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Site</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Lobster&display=swap" rel="stylesheet">
-    <style type="text/css">
-
-		header{
-			height: 200px;
-			background-color: rgb(128, 108, 199);
-		}
-		.ex1{
-			font-size: 50px;
-			color: rgb(255, 217, 0);
-			text-align: center;
-            font-family: 'Caveat', cursive;
-		}
-        .ex2{
-            font-size: 50px;
-            color: azure;
-            text-align: center;
-            font-family: 'Lobster', cursive;
-        }
-        .menu{
-            height: 800px;
-            background-color: rgb(248, 168, 168);
-            width: 20%;
-            float: left;
-        }
-        .content{
-            height: 800px;
-            background-color: aqua;
-            width: 80%;
-            float: left;
-        }
-        footer{
-            height: 150px;
-            background-color: antiquewhite;
-            clear: both;
-        }
-
-.pressed-button {
-  text-decoration: none;
-  display: inline-block;
-  padding: 12px 40px;
-  margin: 10px 20px;
-  border-radius: 30px;
-  background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #002878 100%);
-  background-position: 100% 0;
-  background-size: 200% 200%;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
-  font-weight: 300;
-  color: white;
-  box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
-  transition: .5s;
-  width: 120px;
-  margin-left: 50px;
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="site22.css">
+	<title>site</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+	<style type="text/css">
+		
+		
+/* CSS */
+.button-86 {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 50px ;
+  margin-bottom: 15px;
 }
-.pressed-button:hover {
-  box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
-  background-position: 0 0;
+
+.button-86::after,
+.button-86::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+.button-86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #990d8b;
+  border-radius: 10px;
+}
+
+.button-86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #7c087e18;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.button-86:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.button-86:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.button-86:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
 }
 
 	</style>
-
 </head>
 <body>
-    <header>
-        <p class="ex1">Випускна робота</p>
-    </header>
-    <div class="menu">
-        <p class="ex2">Мої роботи</p>
-        <a href="" class="pressed-button" target="_blank">Банкомат</a>
-        <a href="" class="pressed-button" target="_blank">Button</a>
-        <a href="" class="pressed-button" target="_blank">Button</a>
-        <a href="" class="pressed-button" target="_blank">Button</a>
-        <a href="" class="pressed-button" target="_blank">Button</a>
-        <a href="" class="pressed-button" target="_blank">Button</a>
-        <a href="" class="pressed-button" target="_blank">Button</a>
-        <a href="" class="pressed-button" target="_blank">Button</a>
-        <a href="" class="pressed-button" target="_blank">Button</a>
+<header><p class="p1">Випускна робота Діани</p></header>
+<div class="menu">
+	<p class="p2">Мої роботи</p>
+	<!-- HTML !-->
+<a href="form.html" target="_blank"><button class="button-86" role="button">work 1</button></a> 
+<a href="" class="glow-button">work 2</a>
+<a href="marks.html" target="_blank"><button class="button-86" role="button">work 3</button></a>
+<a href="" class="glow-button">work 4</a>
+<a href="lists.html" target="_blank"><button class="button-86" role="button">work 5</button></a> 
+<a href="" class="glow-button">work 6</a>
+<a href="lists.html" target="_blank"><button class="button-86" role="button">work 7</button></a> 
+<a href="" class="glow-button">work 8</a>
+<a href="lists.html" target="_blank"><button class="button-86" role="button">work 9</button></a> 
+<a href="" class="glow-button">work 10</a>
 
-    </div>
-    <div class="content">
-        <p class="ex2">Про мене</p>
 
-    </div>
-    <footer>
-        <p class="ex1">Мої контакти</p>
-        
-    </footer>
+</div>
+<div class="content"><p class="p2">Про мене</p>
+<h2><p class="p4">Всім привіт. Мене звати Діана. Займаюся театральним. Закінчую 9 класс.  </p></h2> 
+</div>
+<footer><p class="p3">Мої контакти</p>
+<a class="inst">inst: makovskadiana</a>
+</footer>
 </body>
 </html>
