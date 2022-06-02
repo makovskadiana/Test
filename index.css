@@ -67,3 +67,8 @@ body {
       color: azure;
       text-align: center;
   }
+  .leftimg {
+    float:left; /* Выравнивание по левому краю */
+    float: right;
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+   }
