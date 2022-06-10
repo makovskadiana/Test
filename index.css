@@ -43,7 +43,7 @@ body {
   .glow-button {
     text-decoration: none;
     display: inline-block;
-    padding: 15px 45px;
+    padding: 15px 15px;
     margin: 10px 20px;
     border-radius: 10px;
     box-shadow: 0 0 40px 40px #990d8b inset, 0 0 0 0 #c410ca;
@@ -52,8 +52,10 @@ body {
     letter-spacing: px;
     color: white;
     transition: .15s ease-in-out;
-    margin-left: 50px ;
-    margin-bottom: 15px;
+    margin-left: 40px ;
+    margin-bottom: 13px;
+    width: 150px;
+    text-align: center;
   }
   .glow-button:hover {
     box-shadow: 0 0 10px 0 #86237e inset, 0 0 10px 4px #a85ba8;
@@ -62,6 +64,7 @@ body {
   .p4{
       color:rgb(95, 21, 82);
       font-family: 'Caveat', cursive;
+      margin-left: 30px;
   }
   .inst{
       color: azure;
